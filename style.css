@@ -198,10 +198,6 @@ h2 {
   border-style: none;
 }
 
-/* #fifth-section .text-container {
-  background-color: rgba(255, 255, 255, 0.8);
-} */
-
 .additions {
   position: relative;
   top: 0vh;
@@ -213,6 +209,7 @@ h2 {
   width: 400px;
   border-radius: 0.5em;
   animation: rotate 5s infinite linear;
+  animation-iteration-count: 1;
 }
 .addition-one {
   background-image: url("./images/earth.png");
@@ -229,4 +226,5 @@ h2 {
 .addition-five {
   background-image: url("./images/matrix.png");
   animation: slideIn 10s infinite linear;
+  animation-iteration-count: 1;
 }
