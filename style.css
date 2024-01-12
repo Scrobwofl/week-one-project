@@ -1,3 +1,39 @@
+@keyframes rotate {
+  0% {
+    opacity: 0;
+    top: -50vh;
+    transform: rotate(0deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 50vh;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -82,11 +118,11 @@ footer {
   box-shadow: 0 -10px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
-#first-section,
-#second-section,
-#third-section,
-#fourth-section,
-#fifth-section {
+#section-one,
+#section-two,
+#section-three,
+#section-four,
+#section-five {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -95,30 +131,30 @@ footer {
   width: 100vw;
 }
 
-#first-section {
+#section-one {
   background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=4621&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   top: 0;
   left: 0;
 }
-#second-section {
+#section-two {
   background-image: url("https://images.unsplash.com/photo-1521405785232-7a56b029191e?q=80&w=2676&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   top: 100vh;
   left: 0;
 }
 
-#third-section {
+#section-three {
   background-image: url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   top: 200vh;
   left: 0;
 }
 
-#fourth-section {
+#section-four {
   background-image: url("https://images.unsplash.com/photo-1697730574837-ea18221326b5?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   top: 300vh;
   left: 0;
 }
 
-#fifth-section {
+#section-five {
   background-image: url("https://images.unsplash.com/photo-1704642783129-d50efbdfc037?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   top: 400vh;
   left: 0;
@@ -165,3 +201,32 @@ h2 {
 /* #fifth-section .text-container {
   background-color: rgba(255, 255, 255, 0.8);
 } */
+
+.additions {
+  position: relative;
+  top: 0vh;
+  left: 70vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  border-radius: 0.5em;
+  animation: rotate 5s infinite linear;
+}
+.addition-one {
+  background-image: url("./images/earth.png");
+}
+.addition-two {
+  background-image: url("./images/moon.png");
+}
+.addition-three {
+  background-image: url("./images/skydiver.png");
+}
+.addition-four {
+  background-image: url("./images/spaceship.png");
+}
+.addition-five {
+  background-image: url("./images/matrix.png");
+  animation: slideIn 10s infinite linear;
+}
