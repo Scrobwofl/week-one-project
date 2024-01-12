@@ -100,7 +100,11 @@ li {
 }
 
 li:hover {
-  border: 1px solid white;
+  border: 1px solid orange;
+}
+
+li > a:hover {
+  color: orange;
 }
 
 footer {
@@ -197,6 +201,13 @@ h2 {
   color: white;
   border-radius: 0.5em;
   border-style: none;
+}
+
+.text-container > button:hover {
+  background-color: orange;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0 0.5em 1em 0 rgba(0, 0, 0, 0.5);
 }
 
 .additions {
