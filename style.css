@@ -129,6 +129,7 @@ footer {
   position: absolute;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 #section-one {
@@ -208,7 +209,7 @@ h2 {
   height: 400px;
   width: 400px;
   border-radius: 0.5em;
-  animation: rotate 5s infinite linear;
+  animation: rotate 5s linear;
   animation-iteration-count: 1;
 }
 .addition-one {
@@ -225,6 +226,6 @@ h2 {
 }
 .addition-five {
   background-image: url("./images/matrix.png");
-  animation: slideIn 10s infinite linear;
+  animation: slideIn 10s linear;
   animation-iteration-count: 1;
 }
